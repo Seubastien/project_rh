@@ -32,4 +32,7 @@ app.listen(process.env.PORT, (err) => {
     console.log(err ? err : "La connexion au serveur est établie");
 
 })
+app.get("*",(req,res)=>{
+    res.redirect("/home")
+})
 mongoose.connect("mongodb://localhost:27017/projet_rh")
