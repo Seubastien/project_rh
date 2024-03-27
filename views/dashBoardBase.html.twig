@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/css/style.css">
+		<title>Projet-RH</title>
+	</head>
+	<body>
+		{% block header %}
+			{% include "./globalPartials/_headerDashBoard.html.twig" %}
+		{% endblock %}
+		<main>
+			{% block main %}{% endblock %}
+		</main>
+		{% block footer %}
+			{% include "./globalPartials/_footer.html.twig" %}
+		{% endblock %}
+		<script src="../script/main.js"></script>
+		{% block script %}{% endblock %}
+	</body>
+</html>

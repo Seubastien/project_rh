@@ -1,0 +1,25 @@
+<section class="subscribe">
+	<div>
+		<h2>Inscrivez votre entreprise</h2>
+	</div>
+
+	<div>
+		<form action="/subscribe" method="post">
+			<p>{{error.errors.name}}</p>
+			<input id="name" type="text" name="name" placeholder="Nom de l'entreprise">
+			<p>{{error.errors.siret}}</p>
+			<input id="siret" type="number" name="siret" placeholder="Entrez votre Siret">
+			<p>{{error.errors.mail}}</p>
+			<input id="mail" type="text" name="mail" placeholder="Entrez votre Email">
+			<p>{{error.errors.directorName}}</p>
+			<input id="directorName" type="text" name="directorName" placeholder="Entrez le nom du directeur">
+			<p>{{error.errors.password}}</p>
+			<input id="password" type="text" name="password" placeholder="Saisissez un mot de passe">
+			<p>{{error.confirmPassword}}</p>
+			<input or.id="confirmPassword" type="text" name="confirmPassword" placeholder="Confirmer le mot de passe">
+			<button type="submit">Enregistrer</button>
+		</form>
+
+
+	</div>
+</section>

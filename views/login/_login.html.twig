@@ -1,0 +1,15 @@
+<section class="login">
+	<div>
+		<h2>Login</h2>
+	</div>
+	<div>
+		<form action="/login" method="post">
+			<p>{{error.mail}}</p>
+			<input id="mail" type="text" name="mail" placeholder="Entrez votre Email">
+			<p>{{error.password}}</p>
+			<input id="password" type="text" name="password" placeholder="Saisissez un mot de passe">
+			<button type="submit">Valider</button>
+		</form>
+	</div>
+
+</section>

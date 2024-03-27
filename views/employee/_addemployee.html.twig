@@ -1,0 +1,38 @@
+<section class="addEmployee">
+	{% if employee %}
+		<div>
+			<h2>Modifier Employé</h2>
+		</div>
+
+		<div>
+			<form action="/employeeUpdate/{{employee.id}}" method="post" enctype="multipart/form-data">
+				<p>{{error.name}}</p>
+				<input id="name" type="text" name="name" value={{employee.name}}>
+				<p>{{error.function}}</p>
+				<input id="function" type="text" name="function" value={{employee.function}}>
+				<input id="imgEmployee" type="file" name="image" value={{employee.picture}}>
+				<button type="submit">Modifier</button>
+			</form>
+
+
+		</div>
+	{% else %}
+
+		<div>
+			<h2>Enregistrer un nouvel employé</h2>
+		</div>
+		<div>
+			<form action="/addemployee" method="post" enctype="multipart/form-data">
+				<p>{{error.name}}</p>
+				<input id="name" type="text" name="name" placeholder="Nom de l'employé">
+				<p>{{error.function}}</p>
+				<input id="function" type="text" name="function" placeholder="Entrez sa fonction">
+				<input id="imgEmployee" type="file" name="image" >
+				<button type="submit">Enregistrer</button>
+			</form>
+
+
+		</div>
+	{% endif %}
+
+</section>

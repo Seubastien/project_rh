@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+  min-height: 100vh;
+  font-family: Inter;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  background:linear-gradient(145deg, rgba(82, 232, 97, 0.324) 25%, rgba(5, 219, 247, 0.498) 94%);
+}
+
+/* Style pour l'en-tête */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00000044;
+  /* Gris très clair */
+  padding: 20px;
+}
+#logo{
+  width: 70px;
+}
+#headerLogo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+#welcome{
+ text-shadow:  0 0 1em rgb(255, 255, 255);
+ letter-spacing: 0.2em;
+}
+
+/* Style pour le titre */
+h1 {
+
+  letter-spacing: 0.2em;
+  color: #333;
+  /* Gris foncé */
+}
+
+/* Style pour la barre de navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style pour les éléments de la liste de navigation */
+nav ul li {
+  display: inline;
+}
+
+/* Style pour les liens */
+nav ul li a {
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: #333;
+  /* Gris foncé */
+  background-color: #ffffff6c;
+  /* Gris clair */
+  padding: 10px 20px;
+  /* Marge intérieure pour les boutons */
+  border-radius: 5px;
+  /* Coins arrondis */
+  transition: background-color 0.3s;
+  /* Transition fluide pour le changement de couleur au survol */
+}
+
+/* Style pour les liens au survol */
+nav ul li a:hover {
+  background-color:rgba(5, 219, 247, 0.468);
+  /* Gris légèrement plus foncé */
+}
+
+/* STyle Page d'accueil */
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  /* Centrage horizontal */
+  align-items: center;
+  /* Centrage vertical */
+
+}
+
+.homeContainer h1 {
+ 
+  text-align: center;
+  font-size:80px;
+  /* Taille de la police */
+  color: #333;
+  /* Couleur du texte */
+}
+
+/* Style du formulaire d'inscription */
+.subscribe {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff00;
+  /* Fond blanc */
+  gap: 40px;
+}
+
+.subscribe>div {
+  width: 400px;
+  /* Largeur du formulaire */
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* Couleur de fond */
+  border-radius: 10px;
+  /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Ombre douce */
+}
+
+.subscribe h2 {
+ 
+  text-align: center;
+  color: #333;
+  /* Couleur du texte */
+}
+
+.subscribe form {
+  margin-top: 20px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe form input {
+  width: 100%;
+  /* Largeur pleine */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  /* Bordure grise */
+  border-radius: 5px;
+  /* Coins arrondis */
+}
+
+.subscribe form button {
+  width: 100%;
+  /* Largeur pleine */
+  padding: 10px;
+  background-color:  #01010151;
+  /* Couleur de fond bleue */
+  color: white;
+  /* Couleur du texte */
+  border: none;
+  border-radius: 5px;
+  /* Coins arrondis */
+  cursor: pointer;
+}
+.clashButton:hover{
+  background-color:red ;
+}
+
+.subscribe form button:hover {
+  background-color: rgba(5, 219, 247, 0.498);
+  /* Couleur de fond bleue foncée au survol */
+}
+
+.subscribe p {
+  
+  color: red;
+  font-size: x-small;
+  margin: 0;
+}
+
+/* Style du login */
+
+.login {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff00;
+  /* Fond blanc */
+  gap: 40px;
+}
+
+.login>div {
+  width: 400px;
+  /* Largeur du formulaire */
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* Couleur de fond */
+  border-radius: 10px;
+  /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Ombre douce */
+}
+
+.login h2 {
+  text-align: center;
+  color: #333;
+  /* Couleur du texte */
+}
+
+.login form {
+  margin-top: 20px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login p {
+  color: red;
+  font-size: x-small;
+  margin: 0;
+}
+
+.login form input {
+  width: 100%;
+  /* Largeur pleine */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  /* Bordure grise */
+  border-radius: 5px;
+  /* Coins arrondis */
+}
+
+.login form button {
+  width: 100%;
+  /* Largeur pleine */
+  padding: 10px;
+  background-color:  #01010151;
+  /* Couleur de fond bleue */
+  color: white;
+  /* Couleur du texte */
+  border: none;
+  border-radius: 5px;
+  /* Coins arrondis */
+  cursor: pointer;
+}
+
+.login form button:hover {
+  background-color: rgba(5, 219, 247, 0.468);
+  /* Couleur de fond bleue foncée au survol */
+}
+
+/* Style du formulaire ajout d'employé */
+.addEmployee {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff00;
+  /* Fond blanc */
+  gap: 40px;
+}
+
+.addEmployee>div {
+  width: 400px;
+  /* Largeur du formulaire */
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* Couleur de fond */
+  border-radius: 10px;
+  /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Ombre douce */
+}
+
+.addEmployee h2 {
+
+  text-align: center;
+  color: #333;
+  /* Couleur du texte */
+}
+
+.addEmployee form {
+  margin-top: 20px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.addEmployee form input {
+  width: 100%;
+  /* Largeur pleine */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  /* Bordure grise */
+  border-radius: 5px;
+  /* Coins arrondis */
+}
+
+.addEmployee form button {
+  width: 100%;
+  /* Largeur pleine */
+  padding: 10px;
+  background-color:  #01010151;
+  /* Couleur de fond bleue */
+  color: white;
+  /* Couleur du texte */
+  border: none;
+  border-radius: 5px;
+  /* Coins arrondis */
+  cursor: pointer;
+}
+
+.addEmployee form button:hover {
+  background-color: rgba(5, 219, 247, 0.498);
+  /* Couleur de fond bleue foncée au survol */
+}
+
+.addEmployee p {
+  color: red;
+  font-size: x-small;
+  margin: 0;
+}
+
+
+/* Style du dashboard */
+/* Style général pour la section de la page */
+.dashContainer {
+ 
+    display: flex;
+    
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  margin: 20px;
+  
+}
+
+/* Style pour le message d'absence d'employé */
+.dashContainer h2 {
+  color: #555;
+  font-size: 18px;
+}
+
+.articleContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Style pour chaque article d'employé */
+article {
+  background-color: #ffffff2b;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+article:hover {
+  transform: translateY(5px);
+}
+
+article h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+article p {
+  margin: 0;
+  color: #666;
+}
+
+article div.actions {
+  margin-top: 20px;
+}
+
+article div.actions a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #01010151;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+article div.actions a:hover {
+  background-color:rgba(5, 219, 247, 0.468);
+}
+
+#titleDashb {
+  font-size: 3em;
+  /* Taille de police suffisamment grande */
+  text-align: center;
+  color: #333;
+  /* Couleur de texte */
+}
+
+#img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+}
+
+/* Style pour les liens "Modifier" et "Effacer" */
+article div a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #01010151;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+article div a:hover {
+  background-color: rgba(5, 219, 247, 0.468);
+}
+/* Style de la barre de recherche */
+#searchBar {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px; /* Ajustez le rayon selon vos préférences */
+  font-size: 16px;
+  width: 300px; /* Ajustez la largeur selon vos préférences */
+  outline: none;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: rgba(5, 219, 247, 0.468); /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  border: none;
+  border-radius: 20px; /* Ajustez le rayon selon vos préférences */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+/* Style du footer */
+
+footer {
+  text-align: center;
+}
+.burger{
+  display: none;
+}
+/* style responsive */
+@media (max-width: 750px){
+  .burger {
+    display: block;
+    cursor: pointer;
+    height: fit-content
+}
+.barnav{
+  display: none;
+}
+
+}
